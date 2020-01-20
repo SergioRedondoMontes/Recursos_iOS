@@ -1,9 +1,7 @@
 //
 //  WebRequest.swift
-//  eleaOpen
 //
 //  Created by Sergio Redondo on 13/4/18.
-//  Copyright © 2018 elea-soluciones.es. All rights reserved.
 //
 
 import UIKit
