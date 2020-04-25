@@ -13,8 +13,10 @@
 		BAD4F1742454477F00CC8357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F1722454477F00CC8357 /* Main.storyboard */; };
 		BAD4F1762454478000CC8357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F1752454478000CC8357 /* Assets.xcassets */; };
 		BAD4F1792454478000CC8357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F1772454478000CC8357 /* LaunchScreen.storyboard */; };
-		BAD4F1862454486600CC8357 /* CVCDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4F1842454486600CC8357 /* CVCDemo.swift */; };
-		BAD4F1872454486600CC8357 /* CVCDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F1852454486600CC8357 /* CVCDemo.xib */; };
+		BAD4F1862454486600CC8357 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4F1842454486600CC8357 /* MyCollectionViewCell.swift */; };
+		BAD4F1872454486600CC8357 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F1852454486600CC8357 /* MyCollectionViewCell.xib */; };
+		BAD4F18A24544E8000CC8357 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4F18824544E8000CC8357 /* CollectionTableViewCell.swift */; };
+		BAD4F18B24544E8000CC8357 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F18924544E8000CC8357 /* CollectionTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		BAD4F1752454478000CC8357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD4F1782454478000CC8357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD4F17A2454478000CC8357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BAD4F1842454486600CC8357 /* CVCDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVCDemo.swift; sourceTree = "<group>"; };
-		BAD4F1852454486600CC8357 /* CVCDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CVCDemo.xib; sourceTree = "<group>"; };
+		BAD4F1842454486600CC8357 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAD4F1852454486600CC8357 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
+		BAD4F18824544E8000CC8357 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		BAD4F18924544E8000CC8357 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +80,8 @@
 		BAD4F180245447EB00CC8357 /* Collection Cell */ = {
 			isa = PBXGroup;
 			children = (
-				BAD4F1842454486600CC8357 /* CVCDemo.swift */,
-				BAD4F1852454486600CC8357 /* CVCDemo.xib */,
+				BAD4F1842454486600CC8357 /* MyCollectionViewCell.swift */,
+				BAD4F1852454486600CC8357 /* MyCollectionViewCell.xib */,
 			);
 			path = "Collection Cell";
 			sourceTree = "<group>";
@@ -85,6 +89,8 @@
 		BAD4F1812454480100CC8357 /* Table Cell */ = {
 			isa = PBXGroup;
 			children = (
+				BAD4F18824544E8000CC8357 /* CollectionTableViewCell.swift */,
+				BAD4F18924544E8000CC8357 /* CollectionTableViewCell.xib */,
 			);
 			path = "Table Cell";
 			sourceTree = "<group>";
@@ -147,8 +153,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAD4F18B24544E8000CC8357 /* CollectionTableViewCell.xib in Resources */,
 				BAD4F1792454478000CC8357 /* LaunchScreen.storyboard in Resources */,
-				BAD4F1872454486600CC8357 /* CVCDemo.xib in Resources */,
+				BAD4F1872454486600CC8357 /* MyCollectionViewCell.xib in Resources */,
 				BAD4F1762454478000CC8357 /* Assets.xcassets in Resources */,
 				BAD4F1742454477F00CC8357 /* Main.storyboard in Resources */,
 			);
@@ -162,9 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAD4F1712454477F00CC8357 /* ViewController.swift in Sources */,
-				BAD4F1862454486600CC8357 /* CVCDemo.swift in Sources */,
+				BAD4F1862454486600CC8357 /* MyCollectionViewCell.swift in Sources */,
 				BAD4F16D2454477F00CC8357 /* AppDelegate.swift in Sources */,
 				BAD4F16F2454477F00CC8357 /* SceneDelegate.swift in Sources */,
+				BAD4F18A24544E8000CC8357 /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
