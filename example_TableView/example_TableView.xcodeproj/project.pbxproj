@@ -13,6 +13,8 @@
 		BAD4F14E24543D4600CC8357 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F14C24543D4600CC8357 /* Main.storyboard */; };
 		BAD4F15024543D4800CC8357 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F14F24543D4800CC8357 /* Assets.xcassets */; };
 		BAD4F15324543D4800CC8357 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F15124543D4800CC8357 /* LaunchScreen.storyboard */; };
+		BAD4F15E2454429900CC8357 /* TVCDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD4F15C2454429900CC8357 /* TVCDemo.swift */; };
+		BAD4F15F2454429900CC8357 /* TVCDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD4F15D2454429900CC8357 /* TVCDemo.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BAD4F14F24543D4800CC8357 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAD4F15224543D4800CC8357 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAD4F15424543D4800CC8357 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD4F15C2454429900CC8357 /* TVCDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCDemo.swift; sourceTree = "<group>"; };
+		BAD4F15D2454429900CC8357 /* TVCDemo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TVCDemo.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BAD4F14F24543D4800CC8357 /* Assets.xcassets */,
 				BAD4F15124543D4800CC8357 /* LaunchScreen.storyboard */,
 				BAD4F15424543D4800CC8357 /* Info.plist */,
+				BAD4F15C2454429900CC8357 /* TVCDemo.swift */,
+				BAD4F15D2454429900CC8357 /* TVCDemo.xib */,
 			);
 			path = example_TableView;
 			sourceTree = "<group>";
@@ -127,6 +133,7 @@
 			files = (
 				BAD4F15324543D4800CC8357 /* LaunchScreen.storyboard in Resources */,
 				BAD4F15024543D4800CC8357 /* Assets.xcassets in Resources */,
+				BAD4F15F2454429900CC8357 /* TVCDemo.xib in Resources */,
 				BAD4F14E24543D4600CC8357 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +147,7 @@
 			files = (
 				BAD4F14B24543D4600CC8357 /* ViewController.swift in Sources */,
 				BAD4F14724543D4600CC8357 /* AppDelegate.swift in Sources */,
+				BAD4F15E2454429900CC8357 /* TVCDemo.swift in Sources */,
 				BAD4F14924543D4600CC8357 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
