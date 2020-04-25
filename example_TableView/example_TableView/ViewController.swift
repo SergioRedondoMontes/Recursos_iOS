@@ -16,6 +16,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let nib = UINib(nibName: "TVCDemo", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "TVCDemo")
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -26,8 +29,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = myData[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TVCDemo", for: indexPath) as! TVCDemo
+        cell.lblTitle?.text = myData[indexPath.row]
+        cell.img?.backgroundColor = .green
         return cell
     }
 }
