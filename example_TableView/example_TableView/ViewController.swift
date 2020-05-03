@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     @IBOutlet var tableView:UITableView!
-    let myData = ["uno", "dos", "tres" ]
+    let myData = ["uno", "dos", "tres","uno", "dos", "tres","uno", "dos", "tres","uno", "dos", "tres" ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +32,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "TVCDemo", for: indexPath) as! TVCDemo
         cell.lblTitle?.text = myData[indexPath.row]
         cell.img?.backgroundColor = .green
+        cell.img?.image = UIImage(named: "image_1")
+        cell.img?.contentMode = .scaleAspectFill
         return cell
     }
 }
