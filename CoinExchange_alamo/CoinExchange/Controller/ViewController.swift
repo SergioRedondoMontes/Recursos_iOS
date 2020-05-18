@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var currencyLabel: UILabel!
     @IBOutlet weak var currencyPicker: UIPickerView!
     
-    var coinManager = CoinManager()
+    var coinManager = CoinManagerAlamofire()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,7 @@ class ViewController: UIViewController {
 }
 
 
-extension ViewController: CoinManagerDelegate{
+extension ViewController: CoinManagerAlamofireDelegate{
     func didUpdatePrice(price: String, currency: String){
         DispatchQueue.main.async {
             self.bitcoinLabel.text = price

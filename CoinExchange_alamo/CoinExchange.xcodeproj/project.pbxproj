@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,12 @@
 		BA656C2D24693261002F9695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA656C2B24693261002F9695 /* LaunchScreen.storyboard */; };
 		BA656C3824693414002F9695 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA656C3724693414002F9695 /* CoinData.swift */; };
 		BA656C3A246934FE002F9695 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA656C39246934FE002F9695 /* CoinManager.swift */; };
+		BA656C3C246952FF002F9695 /* CoinManagerAlamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA656C3B246952FF002F9695 /* CoinManagerAlamofire.swift */; };
+		BD0525A8153DEDF67349E329 /* Pods_CoinExchange.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEED4F01C1C4EEF4939F112 /* Pods_CoinExchange.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DEED4F01C1C4EEF4939F112 /* Pods_CoinExchange.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinExchange.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA656C1D24693260002F9695 /* CoinExchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinExchange.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA656C2024693260002F9695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA656C2224693260002F9695 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,9 @@
 		BA656C2E24693261002F9695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA656C3724693414002F9695 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		BA656C39246934FE002F9695 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		BA656C3B246952FF002F9695 /* CoinManagerAlamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManagerAlamofire.swift; sourceTree = "<group>"; };
+		D74CDAF8847D30D6AC95725E /* Pods-CoinExchange.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinExchange.debug.xcconfig"; path = "Target Support Files/Pods-CoinExchange/Pods-CoinExchange.debug.xcconfig"; sourceTree = "<group>"; };
+		F534C337E78BD32A694C6C89 /* Pods-CoinExchange.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinExchange.release.xcconfig"; path = "Target Support Files/Pods-CoinExchange/Pods-CoinExchange.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0525A8153DEDF67349E329 /* Pods_CoinExchange.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1536155C92BC58C5D0EE90A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D74CDAF8847D30D6AC95725E /* Pods-CoinExchange.debug.xcconfig */,
+				F534C337E78BD32A694C6C89 /* Pods-CoinExchange.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		677E3B6360E437DBF27A5822 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DEED4F01C1C4EEF4939F112 /* Pods_CoinExchange.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA656C1424693260002F9695 = {
 			isa = PBXGroup;
 			children = (
 				BA656C1F24693260002F9695 /* CoinExchange */,
 				BA656C1E24693260002F9695 /* Products */,
+				1536155C92BC58C5D0EE90A5 /* Pods */,
+				677E3B6360E437DBF27A5822 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +100,7 @@
 		BA656C3424693271002F9695 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BA656C3B246952FF002F9695 /* CoinManagerAlamofire.swift */,
 				BA656C3724693414002F9695 /* CoinData.swift */,
 				BA656C39246934FE002F9695 /* CoinManager.swift */,
 			);
@@ -104,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA656C3124693261002F9695 /* Build configuration list for PBXNativeTarget "CoinExchange" */;
 			buildPhases = (
+				08563C99F0ED9FAE1716C840 /* [CP] Check Pods Manifest.lock */,
 				BA656C1924693260002F9695 /* Sources */,
 				BA656C1A24693260002F9695 /* Frameworks */,
 				BA656C1B24693260002F9695 /* Resources */,
+				2AD2C289193EDA794A15F97C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,12 +192,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08563C99F0ED9FAE1716C840 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoinExchange-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AD2C289193EDA794A15F97C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinExchange/Pods-CoinExchange-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CoinExchange/Pods-CoinExchange-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CoinExchange/Pods-CoinExchange-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA656C1924693260002F9695 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BA656C3824693414002F9695 /* CoinData.swift in Sources */,
+				BA656C3C246952FF002F9695 /* CoinManagerAlamofire.swift in Sources */,
 				BA656C2524693260002F9695 /* ViewController.swift in Sources */,
 				BA656C2124693260002F9695 /* AppDelegate.swift in Sources */,
 				BA656C2324693260002F9695 /* SceneDelegate.swift in Sources */,
@@ -314,6 +386,7 @@
 		};
 		BA656C3224693261002F9695 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74CDAF8847D30D6AC95725E /* Pods-CoinExchange.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +405,7 @@
 		};
 		BA656C3324693261002F9695 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F534C337E78BD32A694C6C89 /* Pods-CoinExchange.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
